@@ -1,0 +1,13 @@
+{
+    "name": "vendor/racing-green",
+    "description": "Description of project racing.green.",
+    "authors": [
+        {
+            "name": "Lauris",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.*"
+    }
+}
