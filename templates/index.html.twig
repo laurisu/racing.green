@@ -1,1 +1,38 @@
-<h1>Hello this is TWIG!</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            less = {
+                env: "development"
+            };
+        </script>
+        <link rel="stylesheet/less" type="text/css" href="css/init.less">
+        <script src="js/less-1.6.3.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1 border">ROW 1</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 border">ROW 2</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1 border">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 border">FIrst</div>
+                        <div class="col-xs-12 col-md-4 border">Second</div>
+                        <div class="col-xs-12 col-md-4 border">Third</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
