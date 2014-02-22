@@ -1,0 +1,20 @@
+/* 
+    Created on : 2014.22.2, 12:34:33
+    Author     : Lauris
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: @footer-height;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: @footer-height;
+}

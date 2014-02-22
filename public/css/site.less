@@ -1,3 +1,28 @@
 .border {
     border: solid 1px @hedding-border-color;
 }
+
+/*======== FOOTER ========*/
+
+.copyright-container {
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.developer-container {
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-align: right;
+}
+.footer-container {
+    min-height: @footer-height -20px;
+    padding-bottom: 20px;
+    background-image: url('data:image/gif;base64,R0lGODlhBAAEAKECAAolBQ45B////////yH5BAEKAAIALAAAAAAEAAQAAAIGTACGqBkFADs=');
+    .box-shadow(inset 0 -15px 30px rgba(0,0,0,0.3));
+    color: #fff;
+    a {
+        color: #959d03;
+        &:hover {
+            color: lighten(#959d03, 30%);
+        }
+    }
+}

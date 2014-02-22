@@ -24,4 +24,10 @@ $app->get('/', function () use ($app) {
     $app->render('index.html.twig');
 })->name('home');
 
+$app->get('/company', function () use ($app) {
+    $app->render('pages/company.html.twig', array(
+        'active'=>'company'
+        ));
+})->name('company');
+
 $app->run();
