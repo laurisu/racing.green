@@ -1,6 +1,87 @@
-{# empty Twig template #}
-{{urlFor('company')}}
+{% extends "index.html.twig" %}
 
-<br>
+{% block content %}
+<div class="content-styles">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <ul class="">
+                    <li><a href="#about our company">About us</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#terms">Terms & conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <img src="http://lorempixel.com/output/transport-q-c-600-380-7.jpg" class="img-responsive" alt="Responsive image" style="float: left">
+                <h2 id="about our company">About our company</h2>
+                <p>
+                    <b>Our success stems from a focused commitment to every aspect of vehicle dismantling, whilst continually improving the standard of service given to it's customers.</b>
+                </p>
+                <p>
+                    Since its founding as Doncaster Motor Spares in 1939, Motorhog has become one of the UK's leading dismantling and salvage specialists. The company has developed and expanded considerably over the years. It now employs over 100 full-time staff and turns over several million pounds per year whilst still remaining an independent and privately owned company.
+                </p>
+                <p>
+                    Presently our operation occupies over 50 acres spread across 10 sites. This much space is required to store the 4000+ vehicles in stock at any one time
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+<div class="styled-article content-styles">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <div class="col-lg-12">
+                    <h2 id="delivery">Delivery</h2>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <p>Once you have found something on fabdirect.com that you want to purchase, simply call us on 01594 827 333 or fill in the enquiry form at the bottom of the part details page. An online shopping basket is coming soon.</p>
+                    <p>All BMW parts can be delivered either to your home address, to an alternative address (such as direct to your garage) or to your work address. For deliveries to non-mainland UK addresses and certain remote locations e.g. Scottish Isles, Isle of Man, Isle of Wight, Northern Ireland and the Scottish Highlands, there may be an additional delivery charge and slightly longer delivery lead-time. We can deliver BMW parts worldwide.</p>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <p>If your order contains more than one product the individual products may, on occasions, be sent on multiple dispatches at no extra charge.</p>
+                    <p>The delivery charge for each item is listed on the product detail page. Should you purchase more than one item, only one delivery charge shall be applied.</p>
+                    <p>Goods delivered by courier will usually arrive between 9am and 5pm, however our couriers may attempt delivery outside these hours. All courier deliveries must be signed for. If you are out when the courier arrives the courier will leave a card with the contact number for you to call to arrange a suitable time for redelivery or for you to collect the goods from the local depot.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-{{active}}
+<div class="content-styles">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <div class="col-lg-12">
+                    <h2 id="terms">Terms & conditions</h2>
+
+                    <h4>1 General Information</h4>
+                    <p>1.1 This website auctions.silverlake.co.uk (the "Website") and the auction service provided on the Website are operated by Silverlake Garage Motor Salvage Ltd ("Silverlake"), a company incorporated in England (company number 624778) whose registered office is at Row Ash, Botley Road, Shedfield, Southampton, SO32 2HL. Silverlake's VAT Registration number is 188449411.</p>
+                    <p>1.2 You must be a registered user (a "Bidder") to place bids and buy vehicles on this Website.</p>
+                    <p>1.3 You should read these Terms and Conditions carefully before completing your application to be a Bidder and if you do not accept the Terms and Conditions, you should not register for the auction service and should cease to access the Website.</p>
+                    <p>1.4 For the purpose of these Terms and Conditions references to "Seller" are to the seller of a Lot as defined in clause 3.1 below and may include Silverlake where Silverlake acts as the seller of any vehicles or parts thereof. Otherwise references to Silverlake are in its capacity as auctioneer and agent for the Seller.</p>
+                    <p>1.5 On registration as a Bidder you accept that these Terms and Conditions will create a legally binding contract between you and Silverlake. You will re-affirm that agreement every time you log in, or bid, or make use of any of the services on the Website.</p>
+                    <p>1.6 These Terms and Conditions may change without notice and it is your responsibility to check the Terms and Conditions each time you access the Website or enter an auction.</p>
+                    <p>1.7 No agent or employee of Silverlake or of a Seller has the authority to vary or agree any variations to these Terms and Conditions except as expressly provided below.</p>
+
+                    <h4>2 REGISTRATION OF BIDDERS</h4>
+                    <p>2.1 Only registered Bidders may enter any auction.</p>
+                    <p>2.2 To register as a Bidder, you must:</p>
+                    <p>2.2.1 be over the age of 18 and capable of entering into a legal agreement; and</p>
+                    <p>2.2.2 complete the application form; and</p>
+                    <p>2.2.3 comply with all requests Silverlake may make for proof of identity and references as to character and/or financial standing;</p>
+                    <p>2.2.4 be accepted as a Bidder by Silverlake (in its entire discretion).</p>
+                    <p>2.3 The completed application form must be submitted to Silverlake or a person authorised by Silverlake together with all other documents that may be requested for approval by Silverlake.</p>
+                    <p>2.4 On approval of your application to register as a Bidder, Silverlake will provide you with your user ID and password to confirm your registration. You are responsible for all actions taken under your user ID. Your user ID is not transferable and you should not allow others to use it or disclose or make available your password to any other person.</p>
+                    <p>2.5 Silverlake reserves the right to decline any application, and to terminate your registration at any time, with or without notice or cause and in its entire sole discretion.</p>
+                    <p>2.6 Without limiting any other remedies of Silverlake under these Terms and Conditions, Silverlake may suspend and/or terminate your registration if Silverlake has any reason to suspect that you have engaged in, or have in any way been involved in or linked to any fraudulent activity in connection with any auction or your use of the Website or that you have misused the Website or the bidding process or breached your obligations under these Terms and Conditions.</p>
+                    <p>2.7 You must notify Silverlake immediately if there is any change to any of the information supplied as part of your application for registration as a Bidder.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

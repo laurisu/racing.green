@@ -1,0 +1,21 @@
+<div class="header-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+{#                {% block name %}
+                    {% include 'page.html' %}
+                {% endblock %}#}
+                
+                <ul>
+                    <li {% if active == 'home' %} class="active" {% endif %}>
+                        <a href="{{ urlFor('home') }}">Home</a>
+                    </li>
+                    <li {% if active == 'company' %} class="active" {% endif %}>
+                        <a href="{{ urlFor('company') }}">Company</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>

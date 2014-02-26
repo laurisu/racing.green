@@ -21,7 +21,9 @@ $view->parserExtensions = array(
 );
 
 $app->get('/', function () use ($app) {
-    $app->render('index.html.twig');
+    $app->render('pages/home.html.twig', array(
+        'active'=>'company'
+        ));
 })->name('home');
 
 $app->get('/company', function () use ($app) {
