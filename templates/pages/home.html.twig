@@ -1,14 +1,91 @@
 {% extends "index.html.twig" %}
 
 {% block content %}
-    <div class="home-container">
-        <div class="container content-styles">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>haha home is ready</h1>
-                    <p>askjdhas kasjdhasdk jhasdk aksjdhas kjdha daskjdhasd </p>
+<div class="home-container bdx">
+
+    <div class="container content-styles">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="carousel-for-homepage" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+  {#                  <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+#}
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img src="http://lorempixel.com/output/transport-q-c-1200-500-3.jpg" alt="...">
+                            <div class="carousel-caption">
+                                 
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/ban2.jpg" alt="...">
+                            <div class="carousel-caption">
+                                 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-for-homepage" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-for-homepage" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4 bdx">
+                        <h2>Car part selection</h2>
+                        <p>You can either use our online search form or get in touch directly with our consulting specialists to select a proper part for your need. We are always happy to help you with your choice.</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 bdx">
+                        <h2>Consulting & delivery</h2>
+                        <p>We give our clients full scale support upon selecting their car parts and we alco provide them with after sale services, such as: worldwide delivery and technical consultations.</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 bdx">
+                        <h2>service & installation</h2>
+                        <p>After finding and selecting a car part for your needs you are welcome to use our car part replacement services, performed by our quilified personel at our own car service.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="styled-article">
+        <div class="container content-styles">            
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <h1>latest products in our catalogue</h1>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-3 bdx">
+
+                        <h6>2009 volkswagen passat b6</h6>
+                        <p>Automatic transmission gearbox</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 bdx">
+
+                        <h6></h6>
+                        <p></p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 bdx">
+
+                        <h6></h6>
+                        <p></p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 bdx">
+
+                        <h6></h6>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
