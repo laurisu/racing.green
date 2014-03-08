@@ -2,31 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-                <nav class="navbar" role="navigation">
-                    <ul class="nav navbar-nav">
-                        
-                        <div {% if active == 'home' %} class="active" {% endif %}>
-                            <a class="navbar-brand" href="{{ urlFor('home') }}">
-                                <img src="../img/logo.png" alt="Racing Green">
-                            </a>
-                        </div>
-                        
-                        <li {% if active == 'home' %} class="active" {% endif %}>
-                            <a href="{{ urlFor('home') }}">Home</a>
-                        </li>
-                        <li {% if active == 'company' %} class="active" {% endif %}>
-                            <a href="{{ urlFor('company') }}">Company</a>
-                        </li>
-                        <li {% if active == 'products' %} class="active" {% endif %}>
-                            <a href="{{ urlFor('products') }}">Products</a>
-                        </li>
-                        <li {% if active == 'contacts' %} class="active" {% endif %}>
-                            <a href="{{ urlFor('contacts') }}">Contacts</a>
-                        </li>
-                        
-                        
-                    </ul>
-                </nav>
+                
+                {% block navbar %}
+                    {% include 'components/navbar.html.twig' %}                
+                {% endblock %}
+                               
             </div>
         </div>
     </div>
