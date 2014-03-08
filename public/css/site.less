@@ -12,6 +12,41 @@
     background-image: url('data:image/gif;base64,R0lGODlhBAAEAKECAAolBQ45B////////yH5BAEKAAIALAAAAAAEAAQAAAIGTACGqBkFADs=');
 }
 
+/*======== NAVBAR ========*/
+
+.my-navbar-style {
+    .navbar-toggle {
+        margin-left: 30px;    
+        border-color: @navbar-default-toggle-border-color;
+        &:hover,
+            &:focus {
+            background-color: @navbar-default-toggle-hover-bg;
+        }
+        .icon-bar {
+            background-color: @navbar-default-toggle-icon-bar-bg;
+        }
+    }
+    @media(max-width: @grid-float-breakpoint-max) {
+        .my-social-buttons {
+            float: right;
+        }
+    }
+    @media(min-width: @grid-float-breakpoint-max) {
+        .my-social-buttons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .my-social-buttons {
+        a {
+            margin-right: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
 /*======== CONTENT ========*/
 
 .content-styles {
