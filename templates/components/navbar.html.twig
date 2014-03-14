@@ -9,20 +9,22 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="navbar-brand" href="{{ urlFor('home') }}"> {#var arī {{ baseUrl }}#}
+            <a class="navbar-brand my-logo" href="{{ urlFor('home') }}"> {#var arī {{ baseUrl }}#}
                 <img src="img/logo.png" alt="Racing Green">
             </a>
             
-            <div class="my-social-buttons">
-                <a href="#facebook"><img src="/img/btn-facebook.png" alt="Facebook"/></a>
-                <a href="#ebay"><img src="/img/btn-ebay.png" alt="eBay"/></a>
+            <div class="nav navbar-nav my-social-buttons">
+                <ul>
+                    <li><a href="#facebook"><img src="/img/btn-facebook.png" alt="Facebook"/></a></li>
+                    <li><a href="#ebay"><img src="/img/btn-ebay.png" alt="eBay"/></a></li>
+                </ul>
             </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav my-header-menu">
 
                 <li {% if active == 'home' %} class="active" {% endif %}>
                     <a href="{{ urlFor('home') }}">Home</a>
@@ -39,7 +41,7 @@
                 
             </ul>
             
-            <form class="navbar-form" role="search">
+            <form class="navbar-form my-search-style" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
