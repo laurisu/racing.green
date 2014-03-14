@@ -13,8 +13,8 @@
                 <img src="img/logo.png" alt="Racing Green">
             </a>
             
-            <div class="nav navbar-nav my-social-buttons">
-                <ul>
+            <div class="my-social-buttons">
+                <ul class="nav navbar-nav">
                     <li><a href="#facebook"><img src="/img/btn-facebook.png" alt="Facebook"/></a></li>
                     <li><a href="#ebay"><img src="/img/btn-ebay.png" alt="eBay"/></a></li>
                 </ul>
@@ -24,8 +24,8 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
             <ul class="nav navbar-nav my-header-menu">
-
                 <li {% if active == 'home' %} class="active" {% endif %}>
                     <a href="{{ urlFor('home') }}">Home</a>
                 </li>
@@ -38,7 +38,6 @@
                 <li {% if active == 'contacts' %} class="active" {% endif %}>
                     <a href="{{ urlFor('contacts') }}">Contacts</a>
                 </li>
-                
             </ul>
             
             <form class="navbar-form my-search-style" role="search">
@@ -48,32 +47,8 @@
                         <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
                     </span>
                 </div>
-                
             </form>
             
         </div><!-- /.navbar-collapse -->
     </div>
-
-{#    <ul class="nav navbar-nav">
-
-        <div {% if active == 'home' %} class="active" {% endif %}>
-            <a class="navbar-brand" href="{{ urlFor('home') }}">
-                <img src="img/logo.png" alt="Racing Green">
-            </a>
-        </div>
-
-        <li {% if active == 'home' %} class="active" {% endif %}>
-            <a href="{{ urlFor('home') }}">Home</a>
-        </li>
-        <li {% if active == 'company' %} class="active" {% endif %}>
-            <a href="{{ urlFor('company') }}">Company</a>
-        </li>
-        <li {% if active == 'products' %} class="active" {% endif %}>
-            <a href="{{ urlFor('products') }}">Products</a>
-        </li>
-        <li {% if active == 'contacts' %} class="active" {% endif %}>
-            <a href="{{ urlFor('contacts') }}">Contacts</a>
-        </li>
-
-    </ul>#}
 </nav>
