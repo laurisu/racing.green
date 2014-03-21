@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<div>
-    <div class="container">
+<div class="content-styles">
+    <div class="container my-contacts-container">
         <div class="col-xs-12 col-lg-10 col-lg-offset-1">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                    <h1>Hi contacts works!</h1>
+                    <h2>Contact information</h2>
                     <br>
                     <p><strong>Adress:</strong></p>
                     <p>Phasellus consequat mauris ac commodo tincidunt.</p>
@@ -26,68 +26,9 @@
                 
                 <div class="col-xs-12 col-sm-8">
                     <div>
-                        
-                        
-                        <!-- Button trigger modal -->
-                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                            Launch demo modal
-                        </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bs-example">
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#">Regular link</a></li>
-                                <li class="dropdown">
-                                    <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
-                                    <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                                        <li role="presentation" class="divider"></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
-                                    <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                                        <li role="presentation" class="divider"></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
-                                    <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                                        <li role="presentation" class="divider"></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                                    </ul>
-                                </li>
-                            </ul> <!-- /pills -->
-                        </div>
-                        
+                        <div id="map-canvas"></div>
+                            
                     </div>
                 </div>
             </div>
@@ -95,53 +36,46 @@
     </div>
 </div>
 
-<div class="styled-article">
-    <div class="container">
+<div class="styled-article content-styles">
+    <div class="container my-contacts-container">
         <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="http://lorempixel.com/output/nature-q-c-1011-480-3.jpg" alt="...">
-                        <div class="carousel-caption">
-                            <h2>XXX 1</h2>
-                            <p>Placeholder Images for every case. Webdesign or Print. It's simple and absolutely free! Just put the custom url in your code like this:to get your FPO / dummy image.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="http://lorempixel.com/output/nature-q-c-1011-480-5.jpg" alt="...">
-                        <div class="carousel-caption">
-                            <h2>XXX 2</h2>
-                            <p>Placeholder Images for every case. Webdesign or Print. It's simple and absolutely free! Just put the custom url in your code like this:to get your FPO / dummy image.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="http://lorempixel.com/output/nature-q-c-1011-480-6.jpg" alt="...">
-                        <div class="carousel-caption">
-                            <h2>XXX 3</h2>
-                            <p>Placeholder Images for every case. Webdesign or Print. It's simple and absolutely free! Just put the custom url in your code like this:to get your FPO / dummy image.</p>
-                        </div>
-                    </div>
-                    ...
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-4">
+                    <h2>Inquiry Form</h2>
+                    <p>Aliquam lectus lorem, viverra et tortor quis, consectetur dapibus risus. Donec in justo nibh. Sed ultrices iaculis imperdiet. Vestibulum ligula est, gravida vitae facilisis non, eleifend sed odio. Morbi et faucibus justo.</p>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                
+                <div class="col-xs-12 col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="form-group col-xs-6">
+                            <input type="text" class="form-control" placeholder="Capcha">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <input type="text" class="form-control" placeholder="Capcha*">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-4">
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message" rows="6"></textarea>
+                    </div>
+                    <div class="form-group">    
+                        <button>Send inquiry</button>
+                    </div>
+                </div>
             </div>
-
 
         </div>
     </div>

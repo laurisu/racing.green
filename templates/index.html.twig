@@ -18,6 +18,33 @@
         <link rel="stylesheet/less" type="text/css" href="css/init.less">
         <script src="js/less-1.6.3.min.js" type="text/javascript"></script>
 
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQfeS1XuRNIiBCzQ4sXg2_4HgcYsqIuTk&sensor=false">
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+                var map;
+                
+                var myLatLng = new google.maps.LatLng(56.948908, 24.133605);
+                
+                var mapOptions = {
+                    center: myLatLng,
+                    zoom: 16
+                };
+                var map = new google.maps.Map(document.getElementById("map-canvas"),
+                        mapOptions);
+                
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    title: 'Webskola',
+                    {#mar: map#}
+                });
+                
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
     </head>
     <body>
         <div class="body-wrap">
