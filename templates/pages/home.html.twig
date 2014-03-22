@@ -1,5 +1,7 @@
 {% extends "index.html.twig" %}
 
+{% block pageTitle %}Home{% endblock %}
+
 {% block content %}
 <div class="home-container">
     
@@ -19,7 +21,7 @@
                             <div class="item active">
                                 <img src="/img/ban1.jpg" class="img-responsive" alt="...">
                                 <div class="carousel-caption">
-                                    <div class="container">
+                                    <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12 col-lg-8 col-lg-offset-1">
                                                 <h3>Full scale service</h3>
@@ -78,47 +80,7 @@
         </div>
     </div>
 
-    <div class="styled-article">
-        <div class="container content-styles">            
-            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-                <div class="row">
-                    <div class="container-fluid">
-                        <div class="col-xs-12">
-                            <h1>latest products in our catalogue</h1>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="thumbnail">
-                                <a href=""><img src="img/thumbs/jet.jpg" alt=""</a>
-                                <h6>2009 volkswagen passat b6</h6>
-                                <p>Automatic transmission gearbox</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="thumbnail">
-                                <a href=""><img src="img/thumbs/mini.jpg" alt=""</a>
-                                <h6>2012 Ford Focus</h6>
-                                <p>Front drivers airbag</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="thumbnail">
-                                <a href=""><img src="img/thumbs/bike.jpg" alt=""</a>
-                                <h6>2010 HYNDAI SANATA EF 2ND GENERATION</h6>
-                                <p>Leather multi-functional steereng wheel</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="thumbnail">
-                                <a href=""><img src="img/thumbs/plane.jpg" alt=""</a>
-                                <h6>2008 Audi A7 Sports Edition</h6>
-                                <p>Drive shaft</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'components/thumbnails.html.twig' %}
+        
 </div>
 {% endblock %}

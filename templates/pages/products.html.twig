@@ -84,6 +84,7 @@
                 </tr>
             </table>
             
+            {% block product_content %}
             <table class="table table-bordered table-condensed table-striped my-products-table">
                 <thead>
                     <tr>
@@ -96,10 +97,10 @@
                 <tbody>
                     <tr>
                         <td class="my-product-img-container">
-                            <img src="img/products/ledtv.jpg" alt="#">
+                            <img src="/img/products/ledtv.jpg" alt="#">
                         </td>
                         <td>
-                            <h5><a href="">Vivamus sit amet porta velit. Phasellus consectetur velit quis semper sodales.</a></h5>
+                            <h5><a href="{{ urlFor('product') }}">Vivamus sit amet porta velit. Phasellus consectetur velit quis semper sodales.</a></h5>
                             <p>Aenean non augue ut justo lobortis aliquam. Suspendisse posuere placerat dignissim. Phasellus nec nunc lorem.</p>
                         </td>
                         <td class="price"><strong><i class="fa fa-eur"></i> 30.00</strong></td>
@@ -107,7 +108,7 @@
                     </tr>
                     <tr>
                         <td class="my-product-img-container">
-                            <img src="img/products/phones.jpg" alt="#">
+                            <img src="/img/products/phones.jpg" alt="#">
                         </td>
                         <td>
                             <h5><a href="">Quisque mi neque, aliquam vestibulum ligula ac, bibendum dignissim mauris.</a></h5>
@@ -118,7 +119,7 @@
                     </tr>
                     <tr>
                         <td class="my-product-img-container">
-                            <img src="img/products/scheme.jpg" alt="#">
+                            <img src="/img/products/scheme.jpg" alt="#">
                         </td>
                         <td>
                             <h5><a href="">Donec in justo nibh. Sed ultrices iaculis imperdiet.</a></h5>
@@ -129,7 +130,7 @@
                     </tr>
                     <tr>
                         <td class="my-product-img-container">
-                            <img src="img/products/turnt.jpg" alt="#">
+                            <img src="/img/products/turnt.jpg" alt="#">
                         </td>
                         <td>
                             <h5><a href="">Curabitur nulla est, lobortis ac nibh u.</a></h5>
@@ -140,6 +141,9 @@
                     </tr>
                 </tbody>
             </table>
+            {% endblock %}
+            
+            
             
         </div>
     </div>

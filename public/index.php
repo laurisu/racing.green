@@ -22,19 +22,28 @@ $view->parserExtensions = array(
 
 $app->get('/', function () use ($app) {
     $app->render('pages/home.html.twig', array(
-        'active'=>'company'
+        'active'=>'home'
         ));
 })->name('home');
+
 $app->get('/company', function () use ($app) {
     $app->render('pages/company.html.twig', array(
         'active'=>'company'
         ));
 })->name('company');
+
 $app->get('/products', function () use ($app) {
     $app->render('pages/products.html.twig', array(
         'active'=>'products'
         ));
 })->name('products');
+
+$app->get('/products/product', function () use ($app) {
+    $app->render('pages/product.html.twig', array(
+        'active'=>'products'
+        ));
+})->name('product');
+
 $app->get('/contacts', function () use ($app) {
     $app->render('pages/contacts.html.twig', array(
         'active'=>'contacts'

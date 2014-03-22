@@ -42,14 +42,20 @@
     .my-header-menu {
         display: inline-block;
         float: none;
-
+        margin-right: 100px;
         text-transform: uppercase;
         font-size: 17px;
         font-family: @headings-font-family;
-        a {
+        a { 
+            padding: 5px 15px;
             color: #fff;
             &:hover {
-
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+        .active {
+            a {
+                text-decoration: underline;
             }
         }
     }
@@ -62,19 +68,21 @@
     @media(min-width: @grid-float-breakpoint-max) {
         .my-social-buttons {
             position: absolute;
-            bottom: 0;
-            right: 0;
+            bottom: 14px;
+            right: -5px;
         }
     }
-    .my-social-buttons {
+    .my-social-buttons {        
         li {
             display: inline-block; 
         }
-/*        a {
-            line-height: 20px;
-            padding: 5px 10px;
-            vertical-align: middle;
-        }*/
+        a { 
+            padding: 5px 15px;
+            color: #fff;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
     }
     .my-search-style {
         position: absolute;
@@ -144,9 +152,21 @@
 /*========= HOME =========*/
 
 .home-container {
+    .carousel-control {
+        .glyphicon-chevron-left {
+            left: 20%;
+        }
+        .glyphicon-chevron-right {
+            right: 20%;
+        }
+    } 
     .carousel-caption {
+        left: 0;
+        right: 0;
         text-align: left;
+        z-index: auto;
         h3 {
+            display: inline-block;
             color: #fff;
             font-size: 36px;
             background-color: #959d03;
@@ -224,6 +244,21 @@
         font-family: @headings-font-family;
         color: #959d03;
         font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+/*======== THUMBNAILS ==========*/
+
+.my-thumbnails {
+    
+    h1 {
+        color: #000;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    h6 {
+        color: #000;
         text-transform: uppercase;
     }
 }
