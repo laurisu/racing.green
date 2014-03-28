@@ -103,8 +103,8 @@
 
             var marker = new google.maps.Marker({
                 position: myLatLng,
-                title: 'Webskola',
-                {#mar: map#}
+                title: 'Webskola'
+                /* "map: map" šo var izmantot "marker.setMap(map);" vietā */
             });
             marker.setMap(map);
         }

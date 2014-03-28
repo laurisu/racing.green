@@ -89,12 +89,18 @@
         top: 5px;
         right: 0;
         padding: 0;
-        width: 300px;
+        width: 150px;
         input {
             border: none;
             background-color: rgba(0, 0, 0, 0.4);
             color: #fff;
+            &:focus {
+                 width: 300px;
+            }
+            -webkit-transition: width 2s ease-in-out;
+            transition: width 2s ease-in-out;
         }
+        
         button {
             border-color: rgba(0, 0, 0, 0.4);
             background-color: rgba(0, 0, 0, 0.4);
@@ -126,25 +132,6 @@
     }
 }
 
-.img-icon {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: inline-block;
-    vertical-align: bottom;
-    height: 30px;
-}
-.img-icon-select {
-    width: 31px;
-    background-image: url(../img/icon1.png);
-}
-.img-icon-gear {
-    width: 31px;
-    background-image: url(../img/icon2.png);
-}
-.img-icon-person {
-    width: 23px;
-    background-image: url(../img/icon3.png);
-}
 .styled-article {
     background-image: @my-bg-img-light;
 }
@@ -175,6 +162,31 @@
         }
     }
 }
+.my-home-content-container {
+    p {
+        font-size: 14px;
+    }
+    .img-icon {
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: inline-block;
+        vertical-align: bottom;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .img-icon-select {
+        width: 31px;
+        background-image: url(../img/icon1.png);
+    }
+    .img-icon-gear {
+        width: 31px;
+        background-image: url(../img/icon2.png);
+    }
+    .img-icon-person {
+        width: 23px;
+        background-image: url(../img/icon3.png);
+    }
+}
 .my-carousel-content {
     color: #fff;
     font-size: 14px;
@@ -182,7 +194,41 @@
     padding: 15px 20px;
 }
 
-/*========PRODUCTS==========*/
+/*======== COMPANY ==========*/
+
+.my-company-container {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+/*========COMPANY NAVBAR==========*/
+
+.my-simple-menu  {
+    > li {
+        text-transform: uppercase;
+        font-family: @headings-font-family;
+        font-size: 18px;
+        list-style: none;
+        display: inline-block;
+        padding: 0 15px;
+        border-right: 1px solid @headings-color;
+
+        &:last-child {
+            border-right: none;
+        }
+        a {
+            color: @headings-color;
+            &:hover {
+                color: lighten(#959d03, 30%);
+            }
+        }
+    }
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+/*======== PRODUCTS ==========*/
 
 .my-products-container {
     padding: 20px 0;
@@ -246,56 +292,109 @@
         font-size: 14px;
         text-transform: uppercase;
     }
+    
+}
+
+/*======== PRODUCT INFO ==========*/
+
+.my-product-info {
+    h2 {
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    .table, .my-product-description {
+        border-color: #959d03;
+    }
+    .my-product-description {
+        padding: 10px;
+    }
+}
+.my-product-priceing {
+    margin-top: 5px;
+    float: right;
+    .table-bordered > tfoot > tr > td {
+        border-color: #959d03;
+    }
+    tfoot {
+        button {
+            width: 100%;
+        }
+    }
+}
+.product-carousel-container {
+    text-align: left;
+    .carousel {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.product-img-carousel-indicators {
+    a {
+        display: inline-block;
+        margin-right: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }
 
 /*======== THUMBNAILS ==========*/
 
 .my-thumbnails {
-    
     h1 {
         color: #000;
-        font-size: 32px;
+        font-size: 36px;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
     h6 {
         color: #000;
         text-transform: uppercase;
     }
-}
-
-/*========COMPANY NAVBAR==========*/
-
-.my-simple-menu  {
-    > li {
-        text-transform: uppercase;
-        font-family: @headings-font-family;
-        font-size: 18px;
-        list-style: none;
-        display: inline-block;
-        padding: 0 15px;
-        border-right: 1px solid @headings-color;
-
-        &:last-child {
-            border-right: none;
-        }
-        a {
-            color: @headings-color;
-            &:hover {
-                color: lighten(#959d03, 30%);
-            }
-        }
+    .thumbnail {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 20px;
     }
-    margin-bottom: 20px;
-    padding-left: 0;
 }
 
 /*======== CONTACTS ========*/
 
 .my-contacts-container {
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    input {
+        height: 34px;
+    }
+    input, textarea {
+        font-size: 14px;
+        border-color: #959d03;
+        border-radius: 0;
+    }
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
     #map-canvas { 
         display: inline-block;
         width: 100%;
         height: 400px; 
+    }
+    button {
+        width: 100%;
+        color: #fff;
+        font-family: @headings-font-family;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 7px;
+        border: none;
+        background: #959d03 url('data:image/gif;base64,R0lGODlhBAAEAKECAHqBA5WdA////////yH5BAEKAAIALAAAAAAEAAQAAAIGBBKGqAkFADs=');
     }
 }
 

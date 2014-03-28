@@ -84,6 +84,12 @@
                 </tr>
             </table>
             
+         </div>
+        </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                
             {% block product_content %}
             <table class="table table-bordered table-condensed table-striped my-products-table">
                 <thead>
@@ -111,7 +117,7 @@
                             <img src="/img/products/phones.jpg" alt="#">
                         </td>
                         <td>
-                            <h5><a href="">Quisque mi neque, aliquam vestibulum ligula ac, bibendum dignissim mauris.</a></h5>
+                            <h5><a href="{{ urlFor('product') }}">Quisque mi neque, aliquam vestibulum ligula ac, bibendum dignissim mauris.</a></h5>
                             <p>Fusce sagittis urna eget feugiat tristique. Aenean non suscipit diam. Morbi purus ligula, faucibus id libero sit amet, molestie dapibus leo.</p>
                         </td>
                         <td class="price"><strong><i class="fa fa-eur"></i> 35.80</strong></td>
@@ -122,7 +128,7 @@
                             <img src="/img/products/scheme.jpg" alt="#">
                         </td>
                         <td>
-                            <h5><a href="">Donec in justo nibh. Sed ultrices iaculis imperdiet.</a></h5>
+                            <h5><a href="{{ urlFor('product') }}">Donec in justo nibh. Sed ultrices iaculis imperdiet.</a></h5>
                             <p>Aliquam lectus lorem, viverra et tortor quis, consectetur dapibus risus.</p>
                         </td>
                         <td class="price"><strong><i class="fa fa-eur"></i> 54.50</strong></td>
@@ -133,7 +139,7 @@
                             <img src="/img/products/turnt.jpg" alt="#">
                         </td>
                         <td>
-                            <h5><a href="">Curabitur nulla est, lobortis ac nibh u.</a></h5>
+                            <h5><a href="{{ urlFor('product') }}">Curabitur nulla est, lobortis ac nibh u.</a></h5>
                             <p>Vestibulum egestas et velit vitae ornare. Aliquam vulputate dignissim risus, mattis ullamcorper massa tincidunt vitae.</p>
                         </td>
                         <td class="price"><strong><i class="fa fa-eur"></i> 78.00</strong></td>
@@ -143,7 +149,7 @@
             </table>
             {% endblock %}
             
-            
+
             
         </div>
     </div>
