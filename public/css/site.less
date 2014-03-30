@@ -89,16 +89,20 @@
         top: 5px;
         right: 0;
         padding: 0;
-        width: 150px;
+        .input-group-btn {
+            width: auto;
+        }
         input {
+            &.form-control {
+                width: 150px;
+            }
             border: none;
             background-color: rgba(0, 0, 0, 0.4);
             color: #fff;
             &:focus {
                  width: 300px;
             }
-            -webkit-transition: width 2s ease-in-out;
-            transition: width 2s ease-in-out;
+            .transition(all 2s ease-in-out);
         }
         
         button {
@@ -303,7 +307,7 @@
         font-size: 24px;
     }
     .table, .my-product-description {
-        border-color: #959d03;
+        border: 1px solid #959d03;
     }
     .my-product-description {
         padding: 10px;
